@@ -1,0 +1,17 @@
+# Core Data Processing
+pandas==2.2.2
+numpy==2.0.2
+
+# Machine Learning & NLP Frameworks
+torch>=1.11.0
+sentence-transformers==5.2.2
+transformers==5.0.0
+
+# Similarity Search
+faiss-cpu==1.13.2
+
+# Utilities
+tqdm==4.67.1
+scikit-learn==1.6.1
+scipy==1.16.3
+huggingface-hub==1.3.4
