@@ -1,4 +1,4 @@
-## MS MARCO Neural Search System
+## MS MARCO Neural Semantic Search System
 
 This project implements a high-performance, two-stage semantic search engine using the MS MARCO dataset. The system leverages a Bi-Encoder for fast initial retrieval and a Cross-Encoder for high-precision re-ranking, supplemented by Pseudo-Relevance Feedback (PRF) for query expansion.
 
@@ -19,22 +19,13 @@ Stage 2: High-Precision Re-ranking (Cross-Encoder)
   Optimization: Implements FP16 (Half-Precision) to double inference speed.
   Operation: The top 40 candidates from Stage 1 are re-scored by the Cross-Encoder to provide the final ranked results.
 
-#Efficiency & Scalability Benchmarks
+# Results and Benchmarks of neural search system:
 
-Based on an analysis of 100 test queries, the system demonstrates the following performance metrics:
+  Based on an analysis of 100 test queries, the system demonstrates the following performance metrics:
 
-  
+![evaluation](results/evaluation.png)
 
-Baseline Evaluation Results
+![evaluation](results/efficiency.png)
 
-The system was evaluated using standard IR metrics across 6,980 queries:
-Metric	Score
-MRR@10	
+![evaluation](results/memory.png)
 
-0.8654
-NDCG@10	
-
-0.8741
-Recall@10	
-
-0.9099
