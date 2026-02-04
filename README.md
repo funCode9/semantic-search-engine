@@ -1,4 +1,4 @@
-### MS MARCO Neural Semantic Search System
+# MS MARCO Neural Semantic Search System
 
 This project implements a high-performance, two-stage semantic search engine using the MS MARCO dataset. The system leverages a Bi-Encoder for fast initial retrieval and a Cross-Encoder for high-precision re-ranking, supplemented by Pseudo-Relevance Feedback (PRF) for query expansion.
 
