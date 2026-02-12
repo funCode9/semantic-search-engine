@@ -25,7 +25,7 @@ Stage 2: High-Precision Re-ranking (Cross-Encoder)
 
 Semantic Depth over Lexical Matching: I prioritized Semantic Search over BM25 as Dense retrieval captures the actual intent of a query whereas BM25 is limited to exact keyword matches.
 
-Infrastructure & Memory Efficiency: To minimize the System RAM and speed of execution, I avoided the overhead of maintaining a dual-index (Inverted Index for BM25 + Vector Index for FAISS). A single-stream neural pipeline is more quick and streamlined for deployment on hardware like T4 GPU.
+Infrastructure & Memory Efficiency: To minimize the System RAM and increase speed of execution, I avoided the overhead of maintaining a dual-index (Inverted Index for BM25 + Vector Index for FAISS). A single-stream neural pipeline is more quick and streamlined for deployment on hardware like T4 GPU.
 
 Redundancy in Two-Stage Architectures: The high precision of the Cross-Encoder re-ranker effectively compensates for the gaps a lexical layer would fill. Adding BM25 significantly increases Query Latency for only marginal gains in accuracy.
 
